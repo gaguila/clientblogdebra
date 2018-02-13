@@ -1,0 +1,110 @@
+<!DOCTYPE>
+<html>
+<head>
+    <title>Embracing Your Wellness</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Ledger" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+</head>
+<body>
+<header>
+<!--HEADER TITLE -->
+    <div class="header-container">
+        <p>Embrace <span class="your-wellness">your WELLNESS </p>
+    </div>
+<!-- ABOUT ME SECTION WITH IMAGE -->
+    <div class = "about-me-container">
+<!-- ABOUT ME IMAGE-->
+        <img class="main-img" src="lina-trochez-377674.jpg" alt="Sunflower";>
+<!-- ABOUT ME BOX -->        
+        <div class="about-me">
+            <h2>About Me</h2>
+            <a><img src="jordan-whitt-78672.jpg" alt="Debra"><a>
+            <div class="about-me-outer">
+                <input type="checkbox" id="showmore">
+                <div class="about-me-inner">
+                    <p> Hi, I'm Debra. Welcome to the Embrace your Wellness Community! Morbi condimentum convallis ligula at aliquam. Phasellus nec dignissim ante, quis tempus quam. Morbi condimentum convallis ligula at aliquam. Phasellus nec dignissim ante. </p>
+                </div>
+                <label for="showmore">Show</label>
+            </div>       
+<!--HEADER SUBSCRIBE BUTTON-->
+            <div class="subscribe">
+                <form class="subscribe" method="post">
+                <input type="email" name="email" placeholder="name@email.com" max-length=30;>        
+                <button type="button" onclick="alert('Welcome to Embrace your WELLNESS')"><i class="fas fa-envelope-square"></i></button> 
+                </form>
+            </div>
+        </div>
+    </div>
+
+<!--NAV BAR-->
+    <div class="nav">
+        <ul class="nav-bar">
+            <li a class="home" href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Recipes</a></li>
+        </ul>
+<!--SEARCH BUTTON-->
+    <div class="search-container">
+        <input type="text" name="email" placeholder="What are you searching for...">
+        <button type="button"><i class="fas fa-search"></i></button> 
+    </div>        
+<!-- NAV BAR SOCIAL MEDIA-->
+        <ul class="nav-bar-social-media">
+            <li class="social-media"><a href="#"><i class="fab fa-facebook-square"></i></a></li>    
+            <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fab fa-youtube-square"></i></a></li>
+            <li><a href="#"><i class="fab fa-pinterest-square"></i></a></li>
+        </ul>
+</header>
+
+<!--STICKY HEADER JS-->
+<div class="header-sticky" id="myHeader">
+    <h1> Living with Hashimoto's <span class="byline"> Published: February 5, 2018</h1>
+</div>
+<script>
+    window.onscroll = function() {myFunction()};
+    
+    var header = document.getElementById("myHeader");
+    var sticky = header.offsetTop;
+    
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        header.classList.add("sticky");
+      } else {
+        header.classList.remove("sticky");
+      }
+    }
+</script>
+
+<!--CONTENT-->
+<div class="content">
+<!--VIDEO-->
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mollis magna non accumsan venenatis. Integer sollicitudin ultrices nisi, vel facilisis urna blandit ac.</p>
+        <iframe height="320" width="600" src="https://www.youtube.com/embed/DKZe8ppNoiM"></iframe>       
+        <p>Nam semper sed nisi in convallis. Curabitur quis lorem vitae risus ultrices rutrum et ac massa. Fusce at cursus elit. Cras pharetra leo eget nisl dapibus, sed convallis lacus pellentesque. Cras auctor ut tellus at porttitor. Curabitur eleifend dolor elit, vitae facilisis enim volutpat at. Nulla facilisi. Mauris vehicula rhoncus elit ac fermentum. Phasellus eu ligula et tellus pretium laoreet id sed elit. Etiam nisi nisi, viverra a augue et, convallis aliquet nunc. Donec consequat est nec odio elementum, nec mollis ipsum viverra. Suspendisse posuere nisl eu tortor viverra consequat. Vestibulum sed magna nec nisl aliquam mattis.</p>
+        <img src="didyouknow.jpg" alt="Did you know" height="150" width="250">
+        <p>Cras in nunc mollis, finibus magna id, imperdiet lectus. Pellentesque ac tellus dui. Sed massa turpis, ultrices id gravida sit amet, lacinia eget ligula. Phasellus risus tellus, rutrum non lectus sit amet, efficitur convallis eros. Fusce id libero eu magna dignissim hendrerit ac sit amet diam. Aenean ac velit est. Integer dignissim sapien non finibus mollis. Pellentesque tellus lectus, congue in sem quis, vehicula aliquam massa. Vivamus tempus molestie ligula, sit amet dapibus nisl bibendum ac. Ut blandit dictum erat vitae tincidunt. Aliquam erat volutpat.</p>
+        <img src="symptoms.jpg" alt="Symptoms">
+        <p>Vivamus porta nunc id diam eleifend interdum. Fusce et ornare turpis. Mauris vestibulum vel enim at ultricies. Vivamus imperdiet lobortis velit. Cras dignissim ullamcorper nunc pharetra pharetra. Phasellus lobortis neque at erat pellentesque sollicitudin. Aenean at magna sed dui eleifend ultrices. Nulla ullamcorper faucibus libero, nec blandit libero laoreet eget. Suspendisse sagittis mauris lacus, sit amet vestibulum eros faucibus at. Phasellus ac hendrerit orci, vel sollicitudin metus. Vestibulum luctus congue ligula vitae blandit.</p>
+        <p>Donec viverra cursus diam, pharetra imperdiet risus hendrerit at. Fusce nec imperdiet dolor. Vivamus volutpat porttitor augue, eget suscipit augue fringilla vel. Nunc lobortis justo ac tortor porttitor egestas. Curabitur lacinia eros sed ornare tristique. Aenean at laoreet neque, eu tempus lacus. Aliquam sit amet ex condimentum, euismod purus vitae, faucibus neque. Donec non metus massa. Suspendisse potenti. Praesent lorem arcu, placerat nec ante nec, volutpat dapibus nisi.</p>
+        <figure>
+            <img src="example.jpg" alt="Example" height="170" width="250">
+            <figcaption>An example of Hashimoto's</figcaption>
+        </figure>
+        <p>Morbi condimentum convallis ligula at aliquam. Phasellus nec dignissim ante, quis tempus quam. Duis ac libero at nisl mollis condimentum. Nam elementum purus vulputate libero placerat, ut lobortis nisl volutpat. Sed venenatis vitae lectus non maximus. Vestibulum sollicitudin interdum tortor in pharetra. Cras hendrerit est at ullamcorper euismod. Curabitur quis ex sit amet dolor sollicitudin sagittis sit amet in libero.</p>
+        <p>Maecenas rutrum ac nisl at auctor. Proin scelerisque, mauris et lacinia lobortis, massa leo semper mauris, vitae blandit augue est vitae elit. Suspendisse sit amet luctus mi. Donec eu auctor risus. Fusce pulvinar fermentum purus a tempor. Sed gravida imperdiet diam. In tincidunt facilisis pulvinar. In hac habitasse platea dictumst. In pulvinar quam magna, eget bibendum velit suscipit sed. Quisque eu placerat sem.</p>
+        <img src="butterfly.jpg" alt="Butterfly" height="150" width="250">
+        <p>Quisque at est tellus. Maecenas vehicula ligula lectus, a fringilla neque lobortis finibus. Integer diam purus, tempus vel condimentum sit amet, rhoncus ut massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id nibh viverra, pellentesque nisl sed, vulputate ex. Pellentesque ut sem pulvinar ex egestas vehicula nec ac eros. Fusce rhoncus et justo in malesuada. Morbi pellentesque ac dui sit amet semper. Nullam vehicula cursus fermentum.</p>
+
+</div>
+<!--FOOTER-->
+    <footer>
+        <p>Copyright 2018 | Embrace Your Wellness | All Rights Reserved | Designed by MiaCramerTech</p>
+    </footer>
+</body>
+</html>
+
+<!--https://foundation.zurb.com/forum/posts/1166-how-to-add-social-media-icons-in-top-bar-nav--is-visible-in-all-devices -->
